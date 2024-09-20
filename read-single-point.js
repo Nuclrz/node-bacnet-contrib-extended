@@ -144,7 +144,7 @@ module.exports = function(RED) {
 
 
 
-          if(msg.bacnetId == "" || msg.bacnetId == null || typeof msg.bacnetId != 'number'){
+          if(typeof msg.bacnetId != 'number'){
 
             try{
               bacnetClient.close();
